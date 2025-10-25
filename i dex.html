@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TCDS · Portal de Documentos</title>
+  <meta name="description" content="Portal oscuro TCDS con visor PDF embebido." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- JSON-LD básico -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CreativeWorkSeries",
+    "name":"TCDS · Portal de Documentos",
+    "url":"https://<tu-usuario>.github.io/TCDS-PORTAL-PDF/",
+    "license":"https://geozunac3536-jpg.github.io/TCDS-LICENCIAS/",
+    "author":{"@type":"Person","name":"Genaro Carrasco Ozuna","identifier":"https://orcid.org/0009-0005-6358-9910"},
+    "keywords":["TCDS","Sincronón","Campo Sigma","CGA","SigmaFET"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>TCDS · Portal de Documentos</h1>
+    <nav>
+      <button id="themeToggle" title="Tema claro/oscuro">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <h2>Documentos</h2>
+      <ul id="docList">
+        <li><a href="#docs/Lo_inherte_en_el_spin.pdf">Neutrón: estado–fuerza–propiedad</a></li>
+        <li><a href="#docs/Orbital_de_giro.pdf">H · Fe · Radiactividad</a></li>
+        <li><a href="#docs/Momento.pdf">Sincronón: transición de fase</a></li>
+        <li><a href="#docs/Metricas.pdf">Diagnóstico IIC⁺ infraestructura</a></li>
+      </ul>
+      <div class="meta">
+        <a class="btn" target="_blank" href="https://geozunac3536-jpg.github.io/TCDS-LICENCIAS/">Licencias</a>
+        <a class="btn" target="_blank" href="https://orcid.org/0009-0005-6358-9910">ORCID</a>
+        <a class="btn" target="_blank" href="https://zenodo.org/records/17443586">DOI (Zenodo)</a>
+      </div>
+    </aside>
+
+    <section id="viewer">
+      <div id="placeholder">
+        <p>Selecciona un PDF en la lista para visualizarlo aquí.</p>
+      </div>
+      <!-- Visor embebido -->
+      <iframe id="pdfFrame" title="Visor PDF"
+              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+              referrerpolicy="no-referrer"
+              loading="lazy"></iframe>
+      <div id="fallback" class="hidden">
+        <p>No se pudo abrir el PDF en el navegador. <a id="dlLink" href="#" download>Descargar</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Genaro Carrasco Ozuna · TCDS</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
