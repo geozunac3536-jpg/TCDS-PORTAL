@@ -1,76 +1,218 @@
-<!DOCTYPE html>
-<html lang="es">
-<head><!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KC4PBWKF');</script>
-<!-- End Google Tag Manager -->
+<!doctype html>
+<html lang="es-MX">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>TCDS · Portal de Documentos</title>
-  <meta name="description" content="Portal oscuro TCDS con visor PDF embebido." />
-  <link rel="stylesheet" href="style.css" />
-  <!-- JSON-LD básico -->
+  <title>TCDS — Portal de Documentos (Canon Paradigmático)</title>
+
+  <!-- SEO básico -->
+  <meta name="description" content="Portal maestro de documentos científicos TCDS — Canon Paradigmático. Obras clave, PDFs auditables, licencias y validación.">
+  <link rel="canonical" href="https://geozunac3536-jpg.github.io/TCDS-PORTAL/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+
+  <!-- Autoría -->
+  <meta name="author" content="Genaro Carrasco Ozuna">
+  <meta name="theme-color" content="#0b0b0f" />
+
+  <!-- Preconexión (mejora TTFB) -->
+  <link rel="preconnect" href="https://geozunac3536-jpg.github.io" crossorigin>
+  <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+
+  <!-- Estilos mínimos (tema oscuro, alto contraste) -->
+  <style>
+    :root{--bg:#0b0b0f;--fg:#e6e6ea;--muted:#a8a8b3;--card:#141418;--accent:#7dd3fc}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent);text-decoration:none} a:hover{opacity:.9}
+    header,main,footer{max-width:1024px;margin-inline:auto;padding:20px}
+    header h1{font-size:1.8rem;margin:0 0 .25rem}
+    header p{margin:.25rem 0;color:var(--muted)}
+    .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:16px}
+    .card{background:var(--card);border-radius:16px;padding:16px;border:1px solid #22232a}
+    .ttl{font-weight:700;margin:0 0 .5rem}
+    .desc{color:var(--muted);margin:.25rem 0 .75rem}
+    .meta{font-size:.9rem;color:var(--muted);margin:.25rem 0 .5rem}
+    .btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:12px;background:#1d1f27;color:#e6e6ea;border:1px solid #2a2c36}
+    .btn[rel~="noopener"]{outline:0}
+    .tag{display:inline-block;font-size:.75rem;padding:.2rem .5rem;border:1px solid #2a2c36;border-radius:999px;color:var(--muted);margin-right:.35rem}
+    figure{margin:0 0 .75rem} figcaption{font-size:.85rem;color:var(--muted)}
+    img{display:block;width:100%;height:auto;border-radius:12px;border:1px solid #22232a}
+    /* accesibilidad */
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+
+  <!-- JSON-LD: Portal + lista de PDFs -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"CreativeWorkSeries",
-    "name":"TCDS · Portal de Documentos",
-    "url":"https://<tu-usuario>.github.io/TCDS-PORTAL-PDF/",
-    "license":"https://geozunac3536-jpg.github.io/TCDS-LICENCIAS/",
-    "author":{"@type":"Person","name":"Genaro Carrasco Ozuna","identifier":"https://orcid.org/0009-0005-6358-9910"},
-    "keywords":["TCDS","Sincronón","Campo Sigma","CGA","SigmaFET"]
+    "@type":"CollectionPage",
+    "name":"TCDS — Portal de Documentos",
+    "url":"https://geozunac3536-jpg.github.io/TCDS-PORTAL/",
+    "description":"Portal maestro de documentos científicos y operativos del Canon TCDS.",
+    "inLanguage":"es-MX",
+    "isPartOf":{"@type":"WebSite","name":"TCDS Canon","url":"https://geozunac3536-jpg.github.io/"},
+    "author":{
+      "@type":"Person",
+      "name":"Genaro Carrasco Ozuna",
+      "email":"mailto:geozunac3536@gmail.com",
+      "telephone":"+52-271-140-8336",
+      "homeLocation":{"@type":"Place","name":"Orizaba, Veracruz, México"},
+      "sameAs":[
+        "https://github.com/geozunac3536-jpg"
+      ]
+    },
+    "hasPart":[
+      {
+        "@type":"CreativeWork",
+        "name":"TCDS — Obra Científica Consolidada (300 págs.)",
+        "fileFormat":"application/pdf",
+        "url":"https://geozunac3536-jpg.github.io/TCDS-PORTAL/pdfs/300pagsTMRCU_Obra_Cientifica_Consolidada.pdf",
+        "about":["TCDS","ΣFET","Sincronón","Σ-metrics"],
+        "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      {
+        "@type":"CreativeWork",
+        "name":"Predicción del Sincronón (Σ–χ)",
+        "fileFormat":"application/pdf",
+        "url":"https://geozunac3536-jpg.github.io/TCDS-PORTAL/pdfs/Tcds_250916_124942.pdf",
+        "about":["Sincronón","Formalismo Σ–χ"],
+        "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      {
+        "@type":"CreativeWork",
+        "name":"ΣFET / SYNCTRON — Protocolo y Falsación",
+        "fileFormat":"application/pdf",
+        "url":"https://geozunac3536-jpg.github.io/TCDS-PORTAL/pdfs/TCDS_AO_250924_205846.pdf",
+        "about":["ΣFET","Lenguas de Arnold","R(t)","LI"],
+        "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      {
+        "@type":"CreativeWork",
+        "name":"Conciencia — CSL-H y Sincronograma",
+        "fileFormat":"application/pdf",
+        "url":"https://geozunac3536-jpg.github.io/TCDS-PORTAL/pdfs/Conciencia.pdf",
+        "about":["CSL-H","SAC","CNH"],
+        "license":"https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      }
+    ]
   }
   </script>
 </head>
-<body><!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC4PBWKF"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <header>
-    <h1>TCDS · Portal de Documentos</h1>
-    <nav>
-      <button id="themeToggle" title="Tema claro/oscuro">🌓</button>
-    </nav>
-  </header>
+<body>
+<header>
+  <h1>TCDS — Portal de Documentos</h1>
+  <p>Canon Paradigmático · Obras científicas, Σ-métricas, protocolos y PDFs auditables.</p>
+  <p class="meta">
+    Autor: <strong>Genaro Carrasco Ozuna</strong> ·
+    <a href="mailto:geozunac3536@gmail.com">geozunac3536@gmail.com</a> ·
+    <a href="tel:+522711408336">+52 271 140 8336</a> ·
+    <a href="https://github.com/geozunac3536-jpg" target="_blank" rel="noopener">GitHub</a>
+  </p>
+  <div aria-hidden="true">
+    <span class="tag">Σ-metrics</span>
+    <span class="tag">ΣFET</span>
+    <span class="tag">Sincronón</span>
+    <span class="tag">CSL-H</span>
+  </div>
+</header>
 
-  <main>
-    <aside>
-      <h2>Documentos</h2>
-      <ul id="docList">
-        <li><a href="#docs/Lo_inherte_en_el_spin.pdf">Neutrón: estado–fuerza–propiedad</a></li>
-        <li><a href="#docs/Orbital_de_giro.pdf">H · Fe · Radiactividad</a></li>
-        <li><a href="#docs/Momento.pdf">Sincronón: transición de fase</a></li>
-        <li><a href="#docs/Metricas.pdf">Diagnóstico IIC⁺ infraestructura</a></li>
-      </ul>
-      <div class="meta">
-        <a class="btn" target="_blank" href="https://geozunac3536-jpg.github.io/TCDS-LICENCIAS/">Licencias</a>
-        <a class="btn" target="_blank" href="https://orcid.org/0009-0005-6358-9910">ORCID</a>
-        <a class="btn" target="_blank" href="https://zenodo.org/records/17443586">DOI (Zenodo)</a>
-      </div>
-    </aside>
+<main>
+  <!-- Tarjetas ligeras con miniaturas (WebP) -->
+  <section aria-label="Documentos TCDS">
+    <div class="grid">
 
-    <section id="viewer">
-      <div id="placeholder">
-        <p>Selecciona un PDF en la lista para visualizarlo aquí.</p>
-      </div>
-      <!-- Visor embebido -->
-      <iframe id="pdfFrame" title="Visor PDF"
-              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-              referrerpolicy="no-referrer"
-              loading="lazy"></iframe>
-      <div id="fallback" class="hidden">
-        <p>No se pudo abrir el PDF en el navegador. <a id="dlLink" href="#" download>Descargar</a></p>
-      </div>
-    </section>
-  </main>
+      <!-- Card 1 -->
+      <article class="card">
+        <figure>
+          <img alt="Portada: Obra Científica Consolidada"
+               loading="lazy"
+               src="thumbs/300pagsTMRCU_Obra_Cientifica_Consolidada.webp"
+               width="640" height="360">
+          <figcaption>Obra científica unificada (300 págs.)</figcaption>
+        </figure>
+        <h2 class="ttl">TCDS — Obra Científica Consolidada</h2>
+        <p class="desc">Σ–χ, Sincronón, ΣFET, métricas LI/R(t), falsación cruzada.</p>
+        <p class="meta">PDF · CC BY-NC-SA 4.0</p>
+        <div class="btns">
+          <a class="btn" target="_blank" rel="noopener"
+             aria-label="Abrir PDF Consolidada en nueva pestaña"
+             href="pdfs/300pagsTMRCU_Obra_Cientifica_Consolidada.pdf">📄 Abrir PDF</a>
+          <a class="btn" target="_blank" rel="noopener"
+             href="https://github.com/geozunac3536-jpg/TCDS-PORTAL">🗂 Ver en GitHub</a>
+        </div>
+      </article>
 
-  <footer>
-    <small>© 2025 Genaro Carrasco Ozuna · TCDS</small>
-  </footer>
+      <!-- Card 2 -->
+      <article class="card">
+        <figure>
+          <img alt="Portada: Predicción del Sincronón"
+               loading="lazy"
+               src="thumbs/Tcds_250916_124942.webp"
+               width="640" height="360">
+          <figcaption>Formalismo Σ–χ y σ</figcaption>
+        </figure>
+        <h2 class="ttl">Predicción del Sincronón (σ)</h2>
+        <p class="desc">Derivación mσ=√2μ, escalas y programa experimental.</p>
+        <p class="meta">PDF · CC BY-NC-SA 4.0</p>
+        <div class="btns">
+          <a class="btn" target="_blank" rel="noopener"
+             aria-label="Abrir PDF Sincronón en nueva pestaña"
+             href="pdfs/Tcds_250916_124942.pdf">📄 Abrir PDF</a>
+        </div>
+      </article>
 
-  <script src="app.js"></script>
+      <!-- Card 3 -->
+      <article class="card">
+        <figure>
+          <img alt="Portada: ΣFET / SYNCTRON"
+               loading="lazy"
+               src="thumbs/TCDS_AO_250924_205846.webp"
+               width="640" height="360">
+          <figcaption>ΣFET / Lenguas de Arnold</figcaption>
+        </figure>
+        <h2 class="ttl">ΣFET / SYNCTRON — Protocolo</h2>
+        <p class="desc">Locking, Δf∝Ac, KPIs: LI≥0.9, R&gt;0.95, RMSE_SL&lt;0.1.</p>
+        <p class="meta">PDF · CC BY-NC-SA 4.0</p>
+        <div class="btns">
+          <a class="btn" target="_blank" rel="noopener"
+             aria-label="Abrir PDF ΣFET en nueva pestaña"
+             href="pdfs/TCDS_AO_250924_205846.pdf">📄 Abrir PDF</a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card">
+        <figure>
+          <img alt="Portada: Conciencia — CSL-H"
+               loading="lazy"
+               src="thumbs/Conciencia.webp"
+               width="640" height="360">
+          <figcaption>CSL-H y sincronograma</figcaption>
+        </figure>
+        <h2 class="ttl">Conciencia — CSL-H</h2>
+        <p class="desc">SAC, CNH, protocolos éticos, métricas de coherencia humana.</p>
+        <p class="meta">PDF · CC BY-NC-SA 4.0</p>
+        <div class="btns">
+          <a class="btn" target="_blank" rel="noopener"
+             aria-label="Abrir PDF Conciencia en nueva pestaña"
+             href="pdfs/Conciencia.pdf">📄 Abrir PDF</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Genaro Carrasco Ozuna · Licencia base: CC BY-NC-SA 4.0 ·
+     <a href="mailto:geozunac3536@gmail.com">Contacto</a></p>
+</footer>
+
+<!-- Endurecer target=_blank para seguridad -->
+<script>
+  for (const a of document.querySelectorAll('a[target="_blank"]')) {
+    a.rel = (a.rel || "") + " noopener noreferrer";
+  }
+</script>
 </body>
 </html>
